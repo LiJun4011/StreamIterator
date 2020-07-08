@@ -26,5 +26,15 @@ int main(int argc, char *argv[])
         int_it++;
     }
 
+    list<int>lst={1,2,3,4,5,6,7,8,9};
+        auto it=lst.begin();
+        while (it!=lst.end()) {
+            if(*it%2)
+                it=lst.erase(it);
+            else
+                it++;
+        }
+
+
     return a.exec();
 }
